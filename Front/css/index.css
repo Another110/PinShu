@@ -1,0 +1,296 @@
+body {
+    margin: 0;
+    font-family: "微软雅黑", Helvetica, Arial, "Hiragino Sans GB", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #555555;
+    background-color: white;
+}
+html {
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+html {
+    -ms-overflow-style: scrollbar;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
+}
+ul, ol {
+	padding: 0;
+	margin: 0 0 10px 25px;
+}
+li {
+    line-height: 20px;
+}
+.read-modal .btn-group .font.hei, body.reader-font2, body.reader-font2 input, body.reader-font2 select, body.reader-font2 textarea, body.reader-font2 .history-mode .view-area, body.reader-font2 .history-mode .view-area pre, body.reader-font2 .main .kalamu-area, body.reader-font2 .main .markdown .text {
+    font-family: -apple-system, "Helvetica Neue", Arial, "PingFang SC", "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+}
+.output {
+    padding-left: 45px;
+}
+@media (min-width: 1588px)
+.output {
+    padding-left: 170px;
+}
+/* -------------navbar-user--------------- */
+.navbar-user {
+	position: fixed;
+	top: 10px;
+	right: 0px;
+	margin-bottom: 0;
+	z-index: 1010;
+}
+.navbar-user .login,
+.wrap-btn .login {
+	position: relative;
+	top: 7px;
+	float: right;
+	padding: 0 2px;
+	margin-right: 8px;
+}
+.navbar-user .login,
+.wrap-btn .login {
+	position: relative;
+	top: 7px;
+	float: right;
+	padding: 0 2px;
+	margin-right: 8px;
+}
+.pd_left {
+	padding-left: 0px;
+}
+.pull-right {
+	float: right;
+}
+.navbar-user .set-view-mode {
+	position: relative;
+	top: 11px;
+	margin-right: 15px;
+	display: none;
+}
+@media (max-width: 768px) {
+	.navbar-user {
+		top: 0;
+		left: 0;
+		height: 45px;
+		background: white;
+		box-shadow: 0 1px 4px #eeeeee;
+	}
+}
+@media (max-width: 768px) {
+	.navbar-user .login,
+	.wrap-btn .login {
+		top: 13px;
+	}
+}
+@media (max-width: 768px) {
+	.navbar-user .set-view-mode {
+		display: inline-block;
+	}
+}
+/* -----------navbar-pinshu--------------- */
+.navbar {
+	overflow: visible;
+	margin-bottom: 20px;
+}
+.navbar-pinshu {
+	position: fixed;
+	width: 45px;
+	z-index: 1049px;
+	-webkit-backface-visibility: hidden;
+}
+.expanded {
+	left: 0;
+	top: 0;
+	height: 100%;
+	background: #2a2a2a;
+}
+.dropup, .dropdown {
+	position: relative;
+}
+a {
+	color: #555555;
+	text-decoration: none;
+}
+.expanded a:hover {
+    color: white;
+}
+.navbar-pinshu a {
+	display: block;
+	padding: 10px;
+	font-size: 16px;
+	line-height: 25px;
+	text-align: center;
+}
+.expanded a {
+	color: #999999;
+	text-shadow: 0 1px 0 black;	
+}
+.navbar-pinshu a.logo {
+	font-size: 18px;
+	color: white;
+}
+.expanded .dropdown a:hover,
+.expanded .dropdown a:active,
+.expanded .dropdown a.active {
+    background-color: #e78170;
+    color: white;
+    text-shadow: 0 1px 0 #de533a;
+}
+.expanded .dropdown a:hover {
+    background-color: #f49484;
+}
+b {
+	font-weight: bold;
+}
+.expanded a.logo b {
+	font-weight: normal;
+}
+.fa {
+	display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	transform: translate(0,0);
+}
+.navbar-pinshu i {
+	width: 16px;
+	display: inline-block;
+	text-align: center;
+	line-height: 14px;
+}
+.expanded a.logo i {
+	display: none;
+}
+.expanded .dropdown span {
+	display: none;
+}
+.navbar-pinshu .nav-user {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	padding-bottom: 5px;
+}
+.navbar-pinshu .nav-user a {
+	position: relative;
+	padding: 5px 10px;
+}
+.navbar-pinshu .nav-user span.title {
+	display: none;
+}
+.shrink {
+    display: none;
+    -webkit-transition: all 0.49s cubic-bezier(0.56, -0.29, 0.57, 1) !important;
+    -moz-transition: all 0.49s cubic-bezier(0.56, -0.29, 0.57, 1) !important;
+    -ms-transition: all 0.49s cubic-bezier(0.56, -0.29, 0.57, 1) !important;
+    -o-transition: all 0.49s cubic-bezier(0.56, -0.29, 0.57, 1) !important;
+    transition: all 0.49s cubic-bezier(0.56, -0.29, 0.57, 1) !important;
+}
+.dropdown-toggle:active, .open .dropdown-toggle {
+    outline: 0;
+}
+.dropdown-menu {
+	position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    list-style: none;
+    background-color: white;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0,0,0,0.2);
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+}
+.dropdown-menu {
+    margin-top: 10px;
+    border-color: #d9d9d9;
+}
+.open>.dropdown-menu {
+    display: block;
+}
+.shrink .dropdown-menu {
+    position: fixed;
+    top: 8px;
+    left: 55px;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+    z-index: 1000;
+}
+.dropdown-menu>li>a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: normal;
+    line-height: 20px;
+    color: #3f3f3f;
+    white-space: nowrap;
+}
+.shrink .dropdown-menu li a {
+    padding: 13px 13px 13px 15px;
+    color: white;
+    text-align: left;
+}
+.shrink .dropdown-menu i {
+    margin-right: 17px;
+}
+@media (min-width: 1588px) {
+	.output .navbar-pinshu {
+		width: 170px;
+	}
+	.output .navbar-pinshu .dropdown a,
+	.output .navbar-pinshu .nav-user a {
+	    padding: 10px 15px;
+	    text-align: left;
+	}
+	.output .navbar-pinshu .logo b {
+		display: none;
+	}
+	.output .navbar-pinshu .logo i {
+		display: inline-block;
+		margin: 0;
+	}
+	.output .navbar-pinshu .title {
+	    padding: 0;
+	}
+	.output .navbar-pinshu span.title {
+	    display: inline-block;
+	    margin-left: 8px;
+	    font-size: 12px;
+	    font-weight: normal;
+	    line-height: 14px;
+	}
+}
+@media (max-width: 768px) {
+	.output .expanded {
+		display: none;
+	}
+	.shrink {
+	    top: 0;
+	    left: 0;
+	    height: auto;
+	    display: block;
+	    background: none;
+	}
+	.shrink a {
+		background-color: #e78170;
+		text-shadow: 0 1px 0 #b9351f;
+	}
+	.shrink .dropdown-menu {
+    top: 35px;
+    left: 0;
+}

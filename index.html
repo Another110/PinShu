@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"><!-- 页面字符编码 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><!-- 避免IE使用兼容模式 -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" /><!-- 设置移动端视图 -->
+	<title>首页 - 品书</title>
+	<link rel="stylesheet" type="text/css" href="Front/css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="Front/css/index.css">
+</head>
+<body class="output">
+	<div class="navbar navbar-pinshu shrink">
+		<div class="dropdown">
+			<a class="dropdown-toggle logo" id="dLabel" role="button" data-toggle="dropdown" data-toggle="#" href="javascript:void(0)">品</a>
+			<ul class="dropdown-menu" role="menu" aria-labellebdy="dLabel">
+				<li>
+					<a href="/">
+						<i class="fa fa-home"></i>
+						<span>首页</span>
+					</a>
+				</li>
+				<li>
+					<a href="/collections">
+						<i class="fa fa-th"></i>
+						<span>专题</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="navbar-user">
+		<a class="login" data-signup-link="true" data-toggle="modal" href="/sign_up">
+			<i class="fa fa-user"></i>
+			<span class="pd_left">注册</span>
+		</a>
+		<a class="login" data-signin-link="true" data-toggle="modal" href="/sign_in">
+			<i class="fa fa-sign-in"></i>
+			<span class="pd_left">登录</span>
+		</a>
+		<a class="set-view-mode pull-right daytime" href="javascript:void(0)">
+			<i class="fa fa-moon-o"></i>
+		</a>
+	</div>
+	<div class="navbar navbar-pinshu expanded">
+		<div class="dropdown">
+			<a class="active logo" role="button" data-original="个人主页" href="/">
+				<b>品</b>
+				<i class="fa fa-home"></i>
+				<span class="title">首页</span>
+			</a>
+			<a data-toggle="tooltip" data-placement="right" data-original="专题" href="/collections">
+				<i class="fa fa-th"></i>
+				<span class="title">专题</span>
+			</a>
+		</div>
+		<div class="nav-user">
+			<a href="#view-mode-modal" data-toggle="modal">
+				<i class="fa fa-font"></i>
+				<span class="title">显示模式</span>
+			</a>
+			<a class="signin" data-signin-link="true" data-toggle="modal" data-placement="right" data-original-title="登录" href="/sign_in">
+				<i class="fa fa-sign-in"></i>
+				<span class="title">登录</span>
+			</a>
+		</div>
+	</div>
+	<div id="flash" class="hide"></div>
+</body>
+<script src="http://code.jquery.com/jquery-1.4.4.min.js"></script>
+</html>
